@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "LLWebViewProxy"
   s.version      = "1.0.0"
-  s.summary      = "Web view proxy."
+  s.summary      = "A standalone iOS & OSX class for intercepting and proxying HTTP requests (e.g. from a Web View)"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -38,8 +38,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # s.license      = "MIT"
+  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -52,7 +52,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "刘政利" => "刘政利" }
+  s.author             = { "刘政利" => "liuzhengli0706@163.com" }
   # Or just: s.author    = ""
   # s.authors            = { "" => "" }
   # s.social_media_url   = "http://twitter.com/"
@@ -63,12 +63,14 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-   s.platform     = :ios
+  # s.platform     = :ios
   # s.platform     = :ios, "5.0"
+  s.ios.platform = :ios, "5.0"
+  s.osx.platform = :osx, "10.9.4"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
-  # s.osx.deployment_target = "10.7"
+  # s.osx.deployment_target = "10.9.4”
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
 
@@ -116,7 +118,8 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
+   s.ios.framework  = "UIKit"
+   s.osx.framework = "WebKit"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
