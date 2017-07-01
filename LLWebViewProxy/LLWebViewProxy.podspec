@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                    DESC
   s.name         = "LLWebViewProxy"
-  s.version      = “0.0.1”
+  s.version      = "0.0.1"
   s.summary      = "A standalone iOS & OSX class for intercepting and proxying HTTP requests (e.g. from a Web View)"
   s.homepage     = "https://github.com/yinyinliushang/LLWebViewProxy"
   s.license      = "MIT"
