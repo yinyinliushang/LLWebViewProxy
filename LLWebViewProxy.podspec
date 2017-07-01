@@ -17,8 +17,9 @@ Pod::Spec.new do |s|
   s.author       = { "刘政利" => "liuzhengli0706@163.com" }
   s.requires_arc = true
   s.source       = { :git => "https://github.com/yinyinliushang/LLWebViewProxy.git", :tag => "#{s.version}" }
-  s.ios.platform     = :ios, "9.0"
-  s.osx.platform     = :osx, "10.9.4"
+  s.ios.deployment_target = '7.0'
+  s.osx.deployment_target = '10.9'
+  #s.osx.platform     = :osx, "10.9.4"
   s.ios.source_files = "LLWebViewProxy/*.{h,m}"
   s.osx.source_files = "LLWebViewProxy/*.{h,m}"
   s.ios.framework    = "UIKit"
