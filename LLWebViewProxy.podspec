@@ -116,8 +116,8 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  s.ios.framework  = "UIKit"
-  s.osx.framework  = "NSKit"
+  s.ios.frameworks  = "UIKit"
+  s.osx.frameworks  = "NSKit"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
