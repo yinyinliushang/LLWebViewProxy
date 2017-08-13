@@ -8,5 +8,5 @@ Pod::Spec.new do |s|
                  'liuzhengli0706@163.com' }
   #s.social_media_url = "https://twitter.com/mattt"
   s.source   = { :git => 'https://github.com/yinyinliushang/LLWebViewProxy.git', :tag => '0.0.1' }
-  s.source_files = 'LLWebViewProxyKit'
+  s.source_files = 'LLWebViewProxy'
 end
