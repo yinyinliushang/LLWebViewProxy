@@ -20,7 +20,7 @@
 #define WVPImageType UIImage
 #endif
 
-typedef void (^StopLoadingHandler)();
+typedef void (^StopLoadingHandler)(void);
 @interface WVPResponse : NSObject <NSURLConnectionDataDelegate>
 @property (assign, nonatomic) NSURLCacheStoragePolicy cachePolicy;
 @property (strong, nonatomic, nullable) NSURLRequest* request;
@@ -183,8 +183,7 @@ typedef void (^WVPHandler)(NSURLRequest* __nullable req, WVPResponse* __nullable
 
  In generally, you will deal with movie request such as letv ,iqiyi and so on.
  
- While if you have some asynchronous actions, this delegate may not suitable, you may want to
- @see
+ While if you have some asynchronous actions, this delegate may not suitable, you may want to see
  @code 
     + (void)setupProxyHost:(nullable NSString *)proxyHost port:(nullable NSNumber *)proxyPort withScheme:(nullable NSString *)scheme completionHandler:(void (^__nullable)(NSData * __nullable data, NSURLResponse * __nullable response, NSError * __nullable error))completionHandler;
  @endcode
