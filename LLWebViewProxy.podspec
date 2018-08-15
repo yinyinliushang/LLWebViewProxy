@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LLWebViewProxy"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Proxy requests for a web views, easily and without mucking around with NSURLProtocol."
 
   # This description is used to generate tags and improve search results.
@@ -93,10 +93,10 @@ If you like WebViewProxy you should also check out WebViewJavascriptBridge.
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "LLWebViewProxy", "LLWebViewProxy/LLWebViewProxy/*.{h,m}"
+  s.source_files  = "LLWebViewProxy", "LLWebViewProxy/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 
-   s.public_header_files = "LLWebViewProxy/LLWebViewProxy/*.h"
+   s.public_header_files = "LLWebViewProxy/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
