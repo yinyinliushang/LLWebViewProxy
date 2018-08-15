@@ -93,10 +93,10 @@ If you like WebViewProxy you should also check out WebViewJavascriptBridge.
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "LLWebViewProxy", "LLWebViewProxy/LLWebViewProxy/*.{h,m}"
+  s.source_files  = "LLWebViewProxy", "LLWebViewProxy/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 
-   s.public_header_files = "LLWebViewProxy/LLWebViewProxy/*.h"
+   s.public_header_files = "LLWebViewProxy/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
